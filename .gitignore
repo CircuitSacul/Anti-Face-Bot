@@ -1,5 +1,5 @@
 .vscode
-bad_faces
+*.jpeg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
