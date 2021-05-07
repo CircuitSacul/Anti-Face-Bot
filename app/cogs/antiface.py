@@ -23,7 +23,7 @@ class Base(commands.Cog):
 
         self.encodings = []
         for face in bad_faces:
-            self.encodings.append(face_recognition.face_encodings(face, num_jitters=1000, model="large")[0])
+            self.encodings.append(face_recognition.face_encodings(face, num_jitters=10, model="large")[0])
 
     async def does_match_any(self, attachment: discord.Attachment):
         as_image = face_recognition.load_image_file(io.BytesIO(await attachment.read()))
